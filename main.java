@@ -14,13 +14,13 @@ public class BinaryToIPConverter {
   //Split ip address by dot(.)  
   String[] octetArray = ip.split("\\.");  
   for (String string : octetArray){  
-  //Finds the primitive data type of a certain string  
+    //Finds the primitive data type of a certain string  
     int octet = Integer.parseInt(string);  
 	
-  //Converts integer into binary string  
+    //Converts integer into binary string  
     String binaryOctet = Integer.toBinaryString(octet);  
 		
-  //Prints the corresponding binary string of the ip address  
+    //Prints the corresponding binary string of the ip address  
     System.out.println(binaryOctet);  
   }//End loop
  }//End Main class  
